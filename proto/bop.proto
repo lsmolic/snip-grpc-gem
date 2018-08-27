@@ -1,0 +1,14 @@
+syntax = "proto3";
+package bop;
+
+service BopService {
+	rpc bop_it(BopRequest) returns (BopResponse) {}
+}
+
+message BopRequest {
+	string url = 1;
+}
+
+message BopResponse {
+	string url = 1;
+}
